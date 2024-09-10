@@ -1,0 +1,32 @@
+.Header{
+    background-color: rgba(93,147,96,0.9);
+    height: 120px;
+    box-sizing: border-box;
+}
+.Header-content{
+    height: 120px;
+    max-width: 1080px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 10px;
+}
+.Header .logo{
+    width: 31%;
+}
+.Header .profile {
+    width: 6%;
+}
+
+@media screen and (max-width:800px){
+    .Header, .Header-content {
+        height: 80px;
+    }
+}
+@media screen and (max-width:400px){
+    .Header, .Header-content {
+        height: 30px;
+    }
+}
