@@ -1,7 +1,11 @@
+import Footer from "../../layout/Footer";
+import Header from "../../layout/Header";
+
 const Main = () => {
     return(
         <div>
-            메인
+            <Header/>
+            <Footer/>
         </div>
     );
 }
