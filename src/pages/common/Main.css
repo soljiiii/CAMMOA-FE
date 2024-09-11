@@ -1,0 +1,53 @@
+.Main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Main .main-container{
+    flex: 1;
+}
+
+/*메인배너*/
+.Main .main-banner{
+    position: relative;
+    background-image: url(./main_view.png);
+    background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1920 / 819; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main .main-search-title {
+    font-size: min(2.5vw, 30px);
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.Main .main-search{
+    max-width: 1080px;
+    width: 100%;
+    aspect-ratio: 1080 / 289; 
+}
+
+
+@media screen and (min-width: 2000px) {
+    .Main .main-banner {
+        aspect-ratio: 2000 / 500; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .Main .main-banner {
+        aspect-ratio: 800 / 507; 
+    }
+}
+@media screen and (max-width: 400px) {
+    .Main .main-banner {
+        aspect-ratio: 400 / 208; 
+    }
+}
