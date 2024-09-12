@@ -19,22 +19,21 @@
     aspect-ratio: 1920 / 819; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.Main .main-banner-container{
+    max-width: 1080px;
+    width: 100%;
 }
 
 .Main .main-search-title {
     font-size: min(2.5vw, 30px);
     color: #FFFFFF;
     margin-top: 50px;
+    margin-bottom: 40px;
+    left: 0;
 }
-
-.Main .main-search{
-    max-width: 1080px;
-    width: 100%;
-    aspect-ratio: 1080 / 289; 
-}
-
 
 @media screen and (min-width: 2000px) {
     .Main .main-banner {

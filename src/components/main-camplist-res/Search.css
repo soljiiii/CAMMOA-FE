@@ -1,20 +1,64 @@
 .Search{
     max-width: 1080px;
+    max-height: 289px;
     width: 100%;
     aspect-ratio: 1080 / 289; 
     border:none;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.search-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 4% 4%;
 }
 
-.search-input input {
-    font-size: min(1.33vw, 16px);
+.search-input{
+    display: flex;
+    max-height: 48px;
+    aspect-ratio: 958 / 48; 
 }
 
-.search-select select {
+.search-keyword-input, .search-date-input{
+    height: auto;
+    width: 49.5%;
+    margin: 0;
+    padding: 0;
+    border-radius: 1.33vw;
     font-size: min(1.33vw, 16px);
+    outline: none;
+}
+.search-keyword-input{
+    margin-right: 1%;
+}
+
+.search-select{
+    display: flex;
+    justify-content: space-between;
+    aspect-ratio: 958 / 48; 
+    max-height: 48px;
+}
+.search-select select{
+    height: 100%;
+    width: 24.5%;
+    font-size: min(1.33vw, 16px);
+    border-radius: 1.33vw;
+}
+
+.search-button-container{
+    display: flex;
+    justify-content: flex-end;
+    height: 40%;
+}
+.search-button{
+    background-color: #5D9360;
+    border: none;
+    aspect-ratio: 958 / 60; 
+    width: 26%;
+    font-size: min(2vw, 20px);
 }

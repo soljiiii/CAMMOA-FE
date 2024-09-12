@@ -9,9 +9,11 @@ const Main = () => {
             <Header/>
                 <div className="main-container">
                     <div className="main-banner">
-                        <span className="main-search-title">어디로 떠나볼까요?</span>
-                        <div className="main-search">
-                            <Search/>
+                        <div className="main-banner-container">
+                            <span className="main-search-title">어디로 떠나볼까요?</span>
+                            <div className="main-search">
+                                <Search/>
+                            </div>
                         </div>
                     </div>
                     <div className="main-body">
